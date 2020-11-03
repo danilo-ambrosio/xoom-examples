@@ -44,7 +44,7 @@ Follow the screenshots below to generate the example projects.
   ![deployment](.assets/deployment.jpg)
 
 
-5 Choose generation path and pick annotations usage.
+5. Choose generation path and pick annotations usage.
   
   ![generation](.assets/generation.jpg)
 
@@ -104,7 +104,7 @@ xception: Index: 0, Size: 0 -> [Help 1]
   ![deployment](.assets/deployment.jpg)
 
 
-5 Choose generation path and do not check annotations.
+5. Choose generation path and do not check annotations.
   
   ![generation-no-annotations](.assets/generation-no-annotations.jpg)
 
