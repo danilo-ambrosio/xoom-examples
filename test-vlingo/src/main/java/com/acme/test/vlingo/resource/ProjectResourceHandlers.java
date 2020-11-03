@@ -1,15 +1,15 @@
 package com.acme.test.vlingo.resource;
 
+import com.acme.test.vlingo.infrastructure.ProjectData;
+import com.acme.test.vlingo.infrastructure.persistence.ProjectQueries;
+import com.acme.test.vlingo.model.project.Project;
+import com.acme.test.vlingo.model.project.ProjectState;
 import io.vlingo.actors.Stage;
 import io.vlingo.common.Completes;
 import io.vlingo.xoom.annotation.autodispatch.Handler.Three;
 import io.vlingo.xoom.annotation.autodispatch.Handler.Two;
 import io.vlingo.xoom.annotation.autodispatch.HandlerEntry;
 
-import com.acme.test.vlingo.infrastructure.persistence.ProjectQueries;
-import com.acme.test.vlingo.model.project.ProjectState;
-import com.acme.test.vlingo.model.project.Project;
-import com.acme.test.vlingo.infrastructure.ProjectData;
 import java.util.Collection;
 
 public class ProjectResourceHandlers {
@@ -29,6 +29,6 @@ public class ProjectResourceHandlers {
           HandlerEntry.of(ADAPT_STATE, ProjectData::from);
 
   public static final HandlerEntry<Two<Completes<Collection<ProjectData>>, ProjectQueries>> QUERY_ALL_HANDLER =
-          HandlerEntry.of(QUERY_ALL, ProjectQueries::projects);
+          HandlerEntry.of(PROJECTS, ProjectQueries::projects);
 
 }
